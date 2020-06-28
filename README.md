@@ -43,3 +43,8 @@
 #### 技术交流
 
 ​	http://blog.liangxiaowu.com/
+
+#### 开发者
+
+- [wudner][https://github.com/Liangxiaowu]
+- [jiangxia][https://github.com/jiangxia123456]
