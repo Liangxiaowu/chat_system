@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router' 
 import Login from  '../view/login'
 import Chat  from '../view/chat'
+import Content from "../components/Content";
 
 Vue.use(VueRouter)
 const originalPush = VueRouter.prototype.push
@@ -18,6 +19,14 @@ const routes = [
       path:'/chat',
       name:'Chat',
       component:Chat,
+      children:[
+          {
+              path: '/chat/:user',
+              name: 'Content',
+              component: Content
+          }
+      ]
+
     }
 ]
 const router = new VueRouter({
